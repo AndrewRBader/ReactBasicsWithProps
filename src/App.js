@@ -1,14 +1,18 @@
-// bring in React from React
-import React from 'react';
+//import styles
+import './styles/index.css'
 
-// greet function
-function greet(){
-  return "Hello World"
-}
+// new function for props
 
-// define hello function
-const Hello = () =>{
-  return (<h1>{greet()}</h1>);
+function Hello(props){
+  // console.log props to see
+  // console.log(props);
+  return(
+    // where JSX goes
+    <div>
+      <h1>Hello I am {props.name}</h1>
+      <p>I am {props.age} and I am from {props.location}</p>
+    </div>
+  );
 }
 
 
