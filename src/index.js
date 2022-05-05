@@ -10,7 +10,7 @@ const person = {
     location: "Queens, NY",
     lovesHisLife: true,
     skills: ["coding","guitar","fitness"],
-
+    netWorth: 10000
 }
 
 
@@ -23,5 +23,6 @@ root.render(
         location ={person.location}
         lifeStatus = {person.lovesHisLife}
         skills = {person.skills}
+        cash = {person.netWorth}
     />
 );
