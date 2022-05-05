@@ -5,12 +5,23 @@ import './styles/index.css';
 
 const person = {
     // can put a bunch of different data types here
+    name: "Andrew",
+    age: 33,
+    location: "Queens, NY",
+    lovesHisLife: true,
+    skills: ["coding","guitar","fitness"],
+
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-    // data is defined here ie key:value pairs
-    <Hello name = {"Andrew"} age = {33} location ={"Queens, NY"}/>
     // JSX custom components
+    <Hello 
+        name = {person.name} 
+        age = {person.age} 
+        location ={person.location}
+        lifeStatus = {person.lovesHisLife}
+        skills = {person.skills}
+    />
 );

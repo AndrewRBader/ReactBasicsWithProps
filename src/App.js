@@ -11,6 +11,8 @@ function Hello(props){
     <div>
       <h1>Hello I am {props.name}</h1>
       <p>I am {props.age} and I am from {props.location}</p>
+      <p> Loving life? {props.lifeStatus}</p>
+      <p>{props.skills}</p>
     </div>
   );
 }
